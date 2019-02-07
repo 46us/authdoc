@@ -2,7 +2,7 @@
 Authorization plugin for WP Help App site.
 
 # How does it work?
-- User need to login to the associated site, in this case is DWC product site.
+- User needs to login to the associated site, in this case is DWC product site.
 - Inside product site, there should be a link which will redirect user to Help App site when user click it.
 - Here is an example how to get Help App url per product per user session:
 ~~~
@@ -34,7 +34,7 @@ $json_data = json_decode($curl_result, true);
 $new_token = $json_data['token'];
 function_to_save_generate_token($new_token);
 
-// The generated URL below will be put as Help App link's href.
+// The generated URL below will be used as Help App link's href.
 $helpapp_url = $json_data['url'];
 ?>
 
